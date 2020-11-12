@@ -42,6 +42,10 @@ input {
     width:20rem;
 }
 
+input::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+
 form button {
     font-size: 14px;
     padding:1rem 3.5rem;
@@ -83,4 +87,25 @@ form button:hover{
 .social-icon:hover {
     background-color:hsl(223, 87%, 63%);
     color:white;
+}
+
+
+@media screen and (max-width:650px) {
+    h1 {
+        font-size: 2.0rem;
+    }
+    form {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    form button {
+        margin: 1rem 0  0;
+    }
+    
+    .dashboard {
+        max-width: 37rem;
+        width:90%;
+    }
+    
 }
